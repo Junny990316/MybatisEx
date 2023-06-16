@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/company")
 public class CompanyController {
     private final CompanyMapper companyMapper;
-
+    private final CompanyService companyService;
 
     @PostMapping("")
     public int post(@RequestBody Company company) {
